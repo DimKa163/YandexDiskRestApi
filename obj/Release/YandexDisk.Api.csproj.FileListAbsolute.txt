@@ -1,0 +1,8 @@
+C:\Users\mitya\OneDrive\Documents\Lesson\C#\YandexDisk.Test\YandexDisk.Api\bin\Release\YandexDisk.Api.dll
+C:\Users\mitya\OneDrive\Documents\Lesson\C#\YandexDisk.Test\YandexDisk.Api\bin\Release\YandexDisk.Api.pdb
+C:\Users\mitya\OneDrive\Documents\Lesson\C#\YandexDisk.Test\YandexDisk.Api\bin\Release\Newtonsoft.Json.dll
+C:\Users\mitya\OneDrive\Documents\Lesson\C#\YandexDisk.Test\YandexDisk.Api\bin\Release\Newtonsoft.Json.xml
+C:\Users\mitya\OneDrive\Documents\Lesson\C#\YandexDisk.Test\YandexDisk.Api\obj\Release\YandexDisk.Api.csprojAssemblyReference.cache
+C:\Users\mitya\OneDrive\Documents\Lesson\C#\YandexDisk.Test\YandexDisk.Api\obj\Release\YandexDisk.Api.csproj.CopyComplete
+C:\Users\mitya\OneDrive\Documents\Lesson\C#\YandexDisk.Test\YandexDisk.Api\obj\Release\YandexDisk.Api.dll
+C:\Users\mitya\OneDrive\Documents\Lesson\C#\YandexDisk.Test\YandexDisk.Api\obj\Release\YandexDisk.Api.pdb
