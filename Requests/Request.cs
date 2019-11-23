@@ -1,8 +1,9 @@
 ﻿using System.Net.Http;
+using YandexDisk.Api.Entities;
 
 namespace YandexDisk.Api.Requests
 {
-    public abstract class Request<TEntity> : IRequest<TEntity>
+    public abstract class Request<TEntity> : IRequest<TEntity> where TEntity : IEntity
     {
         public HttpMethod HttpMethod { get; set; }
         public string Method { get; set; }

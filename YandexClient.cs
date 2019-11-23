@@ -37,7 +37,7 @@
         /// <param name="request">Типизированный запрос.</param>
         /// <param name="token"></param>
         /// <returns>Возвращает объект запроса.</returns>
-        public async virtual Task<TEntity> MakeRequestAsync<TEntity>(IRequest<TEntity> request, CancellationToken token = default)
+        public virtual async Task<TEntity> MakeRequestAsync<TEntity>(IRequest<TEntity> request, CancellationToken token = default) where TEntity : IEntity
         {
             var path = request.BuildPath(BaseUrl);
             HttpRequestMessage message = new HttpRequestMessage(request.HttpMethod, path);
@@ -48,9 +48,9 @@
             {
                 response = await HttpClient.SendAsync(message, token).ConfigureAwait(false);
             }
-            catch (WebException e)
+            catch (TaskCanceledException e)
             {
-                //response = (HttpResponseMessage)e.Response;
+                throw new Exception(e.Message);
             }
             string responseAsString = await response.Content.ReadAsStringAsync();
             YandexApiDiskError error = null;
