@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
+using YandexDisk.Api.Entities;
 using YandexDisk.Api.Requests;
 
 namespace YandexDisk
@@ -13,6 +14,6 @@ namespace YandexDisk
         /// <param name="request">Типизированный запрос.</param>
         /// <param name="token"></param>
         /// <returns>Возвращает объект запроса.</returns>
-        Task<TEntity> MakeRequestAsync<TEntity>(IRequest<TEntity> request, CancellationToken token = default);
+        Task<TEntity> MakeRequestAsync<TEntity>(IRequest<TEntity> request, CancellationToken token = default) where TEntity : IEntity;
     }
 }

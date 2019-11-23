@@ -1,8 +1,8 @@
 ﻿namespace YandexDisk.Api.Requests
 {
     using System.Net.Http;
-
-    public interface IRequest<TEntity>
+    using YandexDisk.Api.Entities;
+    public interface IRequest<TEntity> where TEntity : IEntity
     {
         HttpMethod HttpMethod { get; set; }
 
